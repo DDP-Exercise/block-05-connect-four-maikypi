@@ -1,0 +1,196 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url("image/dark-fantasy-scene.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1,h2 {
+    font-family: "Yusei Magic";
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    color: lightgrey;
+}
+
+h1{
+    color: wheat;
+}
+
+
+p {
+    font-family: "Yusei Magic";
+    color: lightslategray;
+    text-align: center;
+
+}
+
+ /* Uses flexbox to center the input and button with spacing */
+#gamestart {
+    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;   /* between the buttons */
+    margin-top: 20px;
+    color: black;
+}
+
+/* For styling the input and button to set the stone */
+#btn-stone {
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* My layout-container for both players */
+
+#players {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 70px; /*Place the element 10px from the bottom edge */
+    left: 90px;
+    right: 90px;
+}
+
+#player1, #player2 {
+    position: relative; /* this parent element i need for the button later */
+}
+
+.avatar1 {
+    object-fit: cover;
+    border: 5px solid indianred;
+    border-radius: 50%;
+    width: 240px;
+    height: 280px;
+}
+.avatar2 {
+    object-fit: cover;
+    border: 5px solid mediumslateblue;
+    border-radius: 50%;
+    width: 240px;
+    height: 280px;
+}
+
+/* The button, if informations about the characters are needed */
+#player1 button,
+#player2 button {
+    position: absolute; /*child element to stay under the avatar image*/
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+}
+
+#gif1, #gif2 {
+    visibility: hidden;
+    position: absolute;
+    top: -310px; /* because I want the GIF position over the Avatar, this is possible with "position: absolute"*/
+    height: 250px;
+    width: 350px;
+}
+#gif2 {
+    left: -115px;
+    border: 3px solid mediumslateblue;
+}
+#gif1 {
+    right: -115px;
+    border: 3px solid indianred;
+}
+
+
+    #click1, #click2 {
+        font-color: black; font-weight: bold;
+        background-color: wheat;
+        border: 3px solid black;
+    }
+
+
+    #gif1.show,
+    #gif2.show {
+        visibility: visible;
+    }
+
+/* My playboard */
+
+    #playboard {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(7, 60px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.field {
+    width: 65px;
+    height: 65px;
+    background-color: rgba(119, 136, 153, 0.8);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/* Current Player */
+.current-player {
+    font-weight: bold;
+    font-size: x-large;
+    position: absolute;
+    top: -80px;
+}
+
+/* My container for the winner */
+.hiddenwinner {
+    visibility: hidden;
+}
+
+.winner-field {
+    border: 4px solid gold;
+    box-shadow: 0 0 20px gold;
+}
+
+#winner-display {
+    position: fixed;              /* GANZ WICHTIG */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;                /* sorgt für sauberes Zentrieren innen */
+    flex-direction: column;
+    align-items: center;
+}
+
+#winner-display img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 5px solid gold;
+}
+
+#winner2 {
+    margin-top: -310px;
+}
+
+#winneris, #winneris2  {
+    color: gold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#winner-text{
+    background-color: black;
+    color: wheat;
+    border-radius: 5px;
+    border: 5px solid gold;
+    padding: 20px;
+
+}
