@@ -88,7 +88,7 @@ export function ShowWinner() {
     }
 
     if (MODEL.winner === 2) {
-        TEXT.textContent = "Arya Stark wins the battle!";
+        TEXT.textContent = "Arya wins the battle!";
         WINNER2.classList.remove("hiddenwinner");
     }
 }
