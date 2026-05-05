@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel = "stylesheet" href="styles.css"></href>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <title>Connect Four</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--TODO: Build the Markup for your Game. Don't forget to style it in a cascading stylesheet. -->
+<header>
+    <h1>Game of Thrones Edition:</h1>
+        <h2> Daenerys Targaryen vs Arya Stark</h2>
+   <!-- <p>Fire against shadow – the battle for the Iron Throne begins</p> -->
 
+</header>
+<!--TODO: Build the Markup for your Game. Don't forget to style it in a cascading stylesheet. -->
+<div id="gamestart">
+<input id="col-input" type="number" min = "1" max = "7" placeholder = "Column 1-7">
+<button id="btn-stone" type="button">Drop Stone ⚔️</button>
+</div>
+
+<div id="playboard"></div>
+<!-- Here are my players -->
+
+<div id="players">
+
+    <div id="player1">
+        <img class="avatar1" src="image/Daenerys.jpg" alt="Daenerys Targaryen">
+        <button id="click1" type="button">Daenerys Targaryen: Click for more Information</button>
+        <img id="gif1" src="image/giphy2.gif" alt="GIF von Daenerys">
+        <p id="current-player1" class="current-player"></p>
+    </div>
+
+    <div id="player2">
+        <img class="avatar2" src="image/Arya.jpg" alt="Arya Stark">
+        <button id="click2" type="button">Arya Stark: Click for more Information</button>
+        <img id="gif2" src="image/giphy.gif" alt="GIF von Arya">
+        <p id="current-player2" class="current-player"></p>p
+    </div>
+</div>
+
+<div id="winner-display" class="hiddenwinner">
+        <p id="winner-text"></p>
+
+        <img id="winner1" src="image/DaenerysThrone.jpg" class="hiddenwinner">
+        <img id="winner2" src="image/AryaThrone.jpg" class="hiddenwinner">
+</div>
+
+<script type="module" src="js/controller.connectfour.js"></script>
 </body>
 </html>
