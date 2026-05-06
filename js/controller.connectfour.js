@@ -89,7 +89,6 @@ BUTTON2.addEventListener("click", () => {
 /* This button is for the game, the user should input a number from 1-7* then it set a stone and also show which is the current player*/
 
 
-/* Here I want to check if someone win or lose */
 
 BUTTON3.addEventListener("click", () => {
     let value = Number(INPUT.value);
