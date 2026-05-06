@@ -75,11 +75,10 @@ export function ShowWinner() {
     const WINNER2 = document.getElementById("winner2");
     const TEXT = document.getElementById("winner-text");
 
-    // alles verstecken
     WINNER1.classList.add("hiddenwinner");
     WINNER2.classList.add("hiddenwinner");
 
-    // Container sichtbar machen
+
     DISPLAY.classList.remove("hiddenwinner");
 
     if (MODEL.winner === 1) {
