@@ -78,7 +78,7 @@ Dispatch custom events to notify the view:
 /* I created three different function, one for horizontal, one for vertical and one for checking it diagonal */
 
 export function checkWin() {
-    return checkWinHorizontal() || checkWinVertical();
+    return checkWinHorizontal() || checkWinVertical() || checkWinHorizontal();
 }
 
 /*
@@ -178,6 +178,8 @@ function checkWinDiagonal() {
 
     return false;
 }
+
+
 
 function checkGameIsOver() {
     if (checkWin()) {
