@@ -10,7 +10,7 @@
 //      that are already played
 
 import { MODEL } from "./model.connectfour.js";
-import {BOARD} from "./model.connectfour.js";
+
 /*Also I want to get the div playboard from my html element */
 const PLAYBOARD = document.getElementById("playboard")
 
