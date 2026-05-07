@@ -78,7 +78,7 @@ Dispatch custom events to notify the view:
 /* I created three different function, one for horizontal, one for vertical and one for checking it diagonal */
 
 export function checkWin() {
-    return checkWinHorizontal() || checkWinVertical() || checkWinHorizontal();
+    return checkWinHorizontal() || checkWinVertical() || checkWinDiagonal();
 }
 
 /*
@@ -133,6 +133,8 @@ function checkWinVertical() {
 function checkWinDiagonal() {
     const grid = MODEL.board.grid;
 
+    /* */
+
     for (let row = 0; row < 3; row++) {
         for (let col = 0; col < 4; col++) {
             let value = grid[row][col];
@@ -180,8 +182,9 @@ function checkWinDiagonal() {
 }
 
 
+/* check if the game is over */
 
-function checkGameIsOver() {
+export function checkGameIsOver() {
     if (checkWin()) {
         MODEL.gameOver = true;
         MODEL.winner = MODEL.currentPlayer;
