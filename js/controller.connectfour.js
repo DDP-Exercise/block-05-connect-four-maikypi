@@ -51,6 +51,7 @@ import { createBoard } from "./view.polished.js";
 import {setStone} from "./model.connectfour.js";
 import {showCurrentPlayer} from "./view.polished.js";
 import {ShowWinner} from "./view.polished.js";
+import {checkGameIsOver} from "./model.connectfour.js";
 
 
 /* Initialisierung, create the board on the start */
@@ -99,11 +100,14 @@ BUTTON3.addEventListener("click", () => {
         setStone(col);
     }
 
+
+
     /* after setting the stone, refresh the viewboard */
     createBoard();
     showCurrentPlayer();
 
     /* check if the game is over */
+    checkGameIsOver();
     if (MODEL.gameOver) {
         ShowWinner();
     }
