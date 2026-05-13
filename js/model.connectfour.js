@@ -81,6 +81,17 @@ export function checkWin() {
     return checkWinHorizontal() || checkWinVertical() || checkWinDiagonal();
 }
 
+export function checkDraw() {
+    for (let row = 0; row < MODEL.board.grid.length; row++) {
+        for (let col = 0; col < MODEL.board.grid[row].length; col++) {
+            if (MODEL.board.grid[row][col] === 0) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
 /*
 Checks for a horizontal win:
 - Looks through every row.
@@ -191,6 +202,14 @@ export function checkGameIsOver() {
         document.dispatchEvent(new CustomEvent("gameOver"));
         return true;
     }
+
+    if (checkDraw()) {
+        MODEL.gameOver = true;
+        MODEL.winner = null;
+        document.dispatchEvent(new CustomEvent("gameOver"));
+        return true;
+    }
+
 
     return false;
 }
