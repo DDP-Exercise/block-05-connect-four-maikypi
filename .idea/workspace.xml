@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c9f39f2e-3963-4444-b88d-a2ccb7e254ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller.connectfour.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller.connectfour.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/model.connectfour.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/model.connectfour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/view.polished.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/view.polished.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,15 @@
       <workItem from="1777996650388" duration="11671000" />
       <workItem from="1778049647177" duration="1204000" />
       <workItem from="1778067416998" duration="413000" />
-      <workItem from="1778082563899" duration="2249000" />
+      <workItem from="1778082563899" duration="3495000" />
+      <workItem from="1778174072518" duration="1984000" />
+      <workItem from="1778483921466" duration="27000" />
+      <workItem from="1778484118934" duration="876000" />
+      <workItem from="1778507915682" duration="116000" />
+      <workItem from="1778526678853" duration="469000" />
+      <workItem from="1778664929326" duration="1517000" />
+      <workItem from="1778667255087" duration="9000" />
+      <workItem from="1778669702922" duration="497000" />
     </task>
     <servers />
   </component>
@@ -101,7 +109,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/controller.connectfour.js</url>
-          <line>54</line>
+          <line>55</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
