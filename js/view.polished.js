@@ -78,17 +78,16 @@ export function ShowWinner() {
     WINNER1.classList.add("hiddenwinner");
     WINNER2.classList.add("hiddenwinner");
 
-
     DISPLAY.classList.remove("hiddenwinner");
 
     if (MODEL.winner === 1) {
         TEXT.textContent = "Daenerys wins the Iron Throne!";
         WINNER1.classList.remove("hiddenwinner");
-    }
-
-    if (MODEL.winner === 2) {
+    } else if (MODEL.winner === 2) {
         TEXT.textContent = "Arya wins the battle!";
         WINNER2.classList.remove("hiddenwinner");
+    } else {
+        TEXT.textContent = "It's a draw!";
     }
 }
 
