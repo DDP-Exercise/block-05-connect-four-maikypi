@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c9f39f2e-3963-4444-b88d-a2ccb7e254ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/model.connectfour.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/model.connectfour.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/view.polished.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/view.polished.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3D2CatrvWtne2VXpkJO4itlpbcv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pichl/Documents/FH Hagenberg/2. Semester/Introduction to Scripting/block-05-connect-four-maikypi&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pichl\Documents\FH Hagenberg\2. Semester\Introduction to Scripting\block-05-connect-four-maikypi" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9f39f2e-3963-4444-b88d-a2ccb7e254ae" name="Changes" comment="" />
+      <created>1777470845108</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777470845108</updated>
+      <workItem from="1777470846379" duration="19511000" />
+      <workItem from="1777491832659" duration="5483000" />
+      <workItem from="1777532290889" duration="2428000" />
+      <workItem from="1777561473942" duration="1169000" />
+      <workItem from="1777579900199" duration="6363000" />
+      <workItem from="1777591235755" duration="7723000" />
+      <workItem from="1777639864912" duration="15486000" />
+      <workItem from="1777658033654" duration="1490000" />
+      <workItem from="1777742492057" duration="198000" />
+      <workItem from="1777746516434" duration="623000" />
+      <workItem from="1777813990366" duration="3512000" />
+      <workItem from="1777919803713" duration="2589000" />
+      <workItem from="1777996650388" duration="11671000" />
+      <workItem from="1778049647177" duration="1204000" />
+      <workItem from="1778067416998" duration="413000" />
+      <workItem from="1778082563899" duration="3495000" />
+      <workItem from="1778174072518" duration="1984000" />
+      <workItem from="1778483921466" duration="27000" />
+      <workItem from="1778484118934" duration="876000" />
+      <workItem from="1778507915682" duration="116000" />
+      <workItem from="1778526678853" duration="469000" />
+      <workItem from="1778664929326" duration="1517000" />
+      <workItem from="1778667255087" duration="9000" />
+      <workItem from="1778669702922" duration="497000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/controller.connectfour.js</url>
+          <line>47</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/controller.connectfour.js</url>
+          <line>55</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/view.polished.js</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

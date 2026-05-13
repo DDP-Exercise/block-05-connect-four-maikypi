@@ -37,11 +37,78 @@
  *
  *     The creation of this game should take you somewhere between
  *     8-10 hours of concentrated work.
- *     Bratlsoft - 2026-04-29
+ *
+ *     maikypi - 2026-05-05
  *******************************************************/
-
 
 //TODO: Create your controller-object. When initiated, it should boot
 //      the view (or views, if you decide to make a console-view).
 
 //TODO: Add EventListeners, to forward the user inputs to the model.
+
+import { MODEL } from "./model.connectfour.js"
+import { createBoard } from "./view.polished.js";
+import {setStone} from "./model.connectfour.js";
+import {showCurrentPlayer} from "./view.polished.js";
+import {ShowWinner} from "./view.polished.js";
+import {checkGameIsOver} from "./model.connectfour.js";
+
+
+/* Initialisierung, create the board on the start */
+createBoard();
+showCurrentPlayer();
+
+
+/* Here i create my buttons for the gifs*/
+
+const BUTTON1 = document.getElementById("click1");
+const GIF1 = document.getElementById("gif1");
+const BUTTON2 = document.getElementById("click2");
+const GIF2 = document.getElementById("gif2");
+const BUTTON3 = document.getElementById("btn-stone");
+const INPUT = document.getElementById("col-input");
+
+/* This is for open my gifs, if the button from my picture are clicked*/
+BUTTON1.addEventListener("click", () => {
+    console.log("geklickt");
+    GIF1.classList.add("show");
+    setTimeout(() => {
+        GIF1.classList.remove("show");
+    }, 4400);
+});
+
+
+
+BUTTON2.addEventListener("click", () => {
+    console.log("geklickt");
+    GIF2.classList.add("show");
+    setTimeout(() => {
+        GIF2.classList.remove("show");
+    }, 4400);
+});
+
+/* This button is for the game, the user should input a number from 1-7* then it set a stone and also show which is the current player*/
+
+
+
+BUTTON3.addEventListener("click", () => {
+    let value = Number(INPUT.value);
+    let col = value - 1;
+
+
+    if (value >= 1 && value <= 7) {
+        setStone(col);
+    }
+
+
+
+    /* after setting the stone, refresh the viewboard */
+    createBoard();
+    showCurrentPlayer();
+
+    /* check if the game is over */
+    checkGameIsOver();
+    if (MODEL.gameOver) {
+        ShowWinner();
+    }
+});
